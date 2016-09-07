@@ -166,6 +166,18 @@
 	background: red;
 }
 
+.frame__content__tabs {
+	position: relative;
+	min-height: 38px;
+}
+
+.frame__content__tabs .tabs2 {
+	position: absolute;
+	top: -5px;
+	right: 20px;
+}
+
+
 
 .tabs {
 	font-size: 0;
@@ -218,6 +230,41 @@
 	border-bottom-color: #ffffff;
 }
 
+.tabs2 { font-size: 0; }
+.tabs2__item {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;
+	padding: 0 10px 0 10px;
+	margin-right: -1px;
+	font: 14px/26px 'ProximaNova';
+	height: 28px;
+	color: #333333;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	cursor: pointer;
+}
+.tabs2__item:first-child {
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+.tabs2__item:last-child {
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.tabs2__item:hover { border-color: #bbbbbb; }
+
+
+.tabs2__item._active {
+	position: relative;
+	color: #ffffff;
+	background: #0081d4;
+	border-color: #0664a0;
+	cursor: default;
+}
+
+
 
 .form__block {
 	padding-bottom: 14px;
@@ -230,3 +277,48 @@
 	color: #333333;
 	margin: 0 0 12px 210px;
 }
+
+.form__row {
+	font-size: 0;
+	margin-bottom: 14px;
+}
+
+.form__row__item {
+	display: inline-block;
+	vertical-align: middle;
+	font: 14px/18px 'ProximaNova';
+	color: #333333;
+	box-sizing: border-box;
+}
+
+.form__row__item._name {
+	width: 210px;
+	padding-left: 70px;
+	padding-right: 10px;
+	text-align: right;
+}
+.form__row__item._field { width: 420px; }
+
+.form__field {
+	width: 100%;
+	font: 14px 'ProximaNova';
+	padding: 9px 11px 7px 11px;
+	outline: none;
+	color: #666666;
+	text-align: left;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+	box-sizing: border-box;
+}
+
+
+.form__field::-webkit-input-placeholder {color:#999999;}
+.form__field::-moz-placeholder          {color:#999999;}/* Firefox 19+ */
+.form__field:-ms-input-placeholder      {color:#999999;}
+
+.form__field:focus::-webkit-input-placeholder {color: transparent;}
+.form__field:focus::-moz-placeholder          {color: transparent;}
+.form__field:focus:-ms-input-placeholder      {color: transparent;}
+
+.form__field:hover,
+.form__field:focus { border-color: #bbbbbb; }
