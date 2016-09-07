@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Install widget | DigiFabster</title>
+
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/icon">
+    <link rel="icon" href="static/img/favicon.ico" type="image/icon">
+
+    <link href="https://file.myfontastic.com/EsBXFV9S5P9RnadiwXoaWX/icons.css" rel="stylesheet">
+
+	<link href="static/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="static/css/animate.css" rel="stylesheet">
+	<link href="static/css/style.css" rel="stylesheet">
+	<link href="static/css/add-css.css" rel="stylesheet">
+	<link href="static/css/custom-scroll.css" rel="stylesheet">
+
+	<link href="static/css/style2.css" rel="stylesheet">
+
+    <script src="static/js/3rd_party/jquery-1.11.2.min.js"></script>
+    <script src="static/js/3rd_party/bootstrap.min.js"></script>
+    <script src="static/js/module.js"></script>
+    <script src="static/js/GlobalApp.js"></script>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+	<nav class="navbar-default navbar-static-side" role="navigation">
+		<div class="sidebar-collapse">
+			<ul class="nav" id="side-menu">
+				<li class="nav-header">
+                    <div class="nav-logo-header">
+                        <img src="/static/img/white-df-logo.5fce356efc6b.png" />
+                    </div>
+					<div class="dropdown profile-element">
+                        <span>
+
+                         </span>
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Dmitry Vlasov</strong>
+                             </span> <span class="text-muted text-xs block">3dprintus123456789<b class="caret"></b></span> </span> </a>
+						<ul class="dropdown-menu animated fadeInRight m-t-xs">
+
+
+							<li><a href="/manage/logout/">Logout</a></li>
+						</ul>
+					</div>
+					<div class="logo-element">
+						IN+
+					</div>
+
+				</li>
+                <li >
+					<a href="/manage/personal/"><i class="fa fa-user"></i><span class="nav-label">Personal Info</span></a>
+				</li>
+                <li >
+					<a href="/manage/getstarted/"><i class="fa fa-rocket"></i><span class="nav-label">Get started</span></a>
+				</li>
+				<li >
+					<a href="/manage/company/"><i class="fa fa-info-circle"></i><span class="nav-label">Company</span></a>
+				</li>
+				<li >
+					<a href="/manage/materials/"><i class="fa fa-tasks"></i><span class="nav-label">Materials</span></a>
+				</li>
+                <li >
+                    <a href="/manage/clients/"><i class="fa fa-users"></i><span class="nav-label">Clients</span></a>
+                </li>
+				<li >
+					<a href="/manage/orders/"><i class="fa fa-credit-card"></i><span class="nav-label">Orders</span></a>
+				</li>
+                <li >
+                    <a href="/manage/models/"><i class="fa fa-cubes"></i><span class="nav-label">Models</span></a>
+                </li>
+                <li  class="active" >
+					<a href="/manage/install_widget/"><i class="fa fa-code"></i><span class="nav-label">Install widget</span></a>
+				</li>
+                <li >
+					<a href="/manage/billing/"><i class="fa fa-credit-card"></i><span class="nav-label">Billing</span></a>
+				</li>
+                <li>
+					<a href="/3dprintus123456789/client/upload/" target="_blank"><i class="fa fa-upload"></i><span class="nav-label">Test upload</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div id="page-wrapper" class="gray-bg" data-process_forms_url="" data-change_logo_url=>
+        <input type='hidden' name='csrfmiddlewaretoken' value='OPBYITJqK8KhW8yKIEnASZzJk7BhXrQs' />
+		<div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row todo-box">
+			    <div class="col-lg-12">
+			        <!---->
+				    <div class="frame">
+					    <!--header-->
+					    <div class="frame__header">
+						    <div class="frame__header__left">
+							    <a href="#" class="frame__header__left__item _back icon icon__back" title="Назад">Назад</a>
+							    <div class="frame__header__left__item">
+								    <div class="frame__header__title">
+									    New material
+									    <a href="#" class="frame__header__title__edit icon icon__edit" title="edit">edit</a>
+								    </div>
+								    <div class="add-note">
+									    <span class="add-note__door">Add note for self</span>
+								    </div>
+							    </div>
+							    <div class="frame__header__left__item">
+								    <div class="onoffswitch2">
+									    <input type="checkbox" name="onoffswitch2" class="onoffswitch2-checkbox" id="myonoffswitch2" checked>
+									    <label class="onoffswitch2-label" for="myonoffswitch2">
+										    <span class="onoffswitch2-inner"></span>
+										    <span class="onoffswitch2-switch"></span>
+									    </label>
+								    </div>
+							    </div>
+						    </div>
+						    <div class="frame__header__right">
+							    <a href="#" class="button _gray">DIScard</a>
+							    <a href="#" class="button">save</a>
+						    </div>
+					    </div>
+					    <!--/header-->
+					    <div class="frame__content">
+						    <div class="frame__content__tabs">
+								<ul class="tabs">
+									<li class="tabs__item _active">Settings</li>
+									<li class="tabs__item">Execution</li>
+									<li class="tabs__item">Post production</li>
+								</ul>
+						    </div>
+						    <div class="frame__content__middle">
+							    <form action="#" class="form">
+								    <dl class="form__block">
+									   <dt class="form__block__title">Material info</dt>
+									   <dd>
+										   cvccvcv
+									   </dd>
+									</dl>
+								    <dl class="form__block">
+									   <dt class="form__block__title">Lead time</dt>
+									   <dd>
+										   cvccvcv
+									   </dd>
+									</dl>
+									<dl class="form__block">
+									   <dt class="form__block__title">Layer thickness</dt>
+									   <dd>
+										   cvccvcv
+									   </dd>
+								   </dl>
+								    <dl class="form__block">
+									    <dt class="form__block__title">Filling</dt>
+									    <dd>
+										    cvccvcv
+									    </dd>
+								    </dl>
+								    <dl class="form__block">
+									    <dt class="form__block__title">Sanding</dt>
+									    <dd>
+										    cvccvcv
+									    </dd>
+								    </dl>
+								    <dl class="form__block">
+									    <dt class="form__block__title">Coloring</dt>
+									    <dd>
+										    cvccvcv
+									    </dd>
+								    </dl>
+								    <dl class="form__block">
+									    <dt class="form__block__title">Coloring</dt>
+									    <dd>
+										    cvccvcv
+									    </dd>
+								    </dl>
+							    </form>
+						    </div>
+					    </div>
+				    </div>
+				    <!--/-->
+
+
+			    </div>
+			</div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+    <!-- Mainly scripts -->
+    <script src="static/js/3rd_party/jquery.custom-scrollbar.min.js"></script>
+    <script src="static/js/3rd_party/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="static/js/jquery.minimalect.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="static/js/3rd_party/inspinia.js"></script>
+    <script src="static/js/GetStartedActions.js"></script>
+
+</html>

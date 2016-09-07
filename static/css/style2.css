@@ -1,0 +1,232 @@
+.icon:before {
+	/*font-family: "icons-font" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	text-decoration: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;*/
+}
+
+
+.add-note__door {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 12px;
+	color: #999999;
+	border-bottom: 1px dotted #999999;
+	cursor: pointer;
+}
+
+
+.button {
+	display: inline-block;
+	padding: 9px 16px 7px 16px;
+	font: 12px 'ProximaNovaSemiBold', sans-serif;
+	color: #ffffff;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #0081d4;
+	border: 0 none;
+	border-radius: 14px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.button._gray {
+	color: #999999;
+	background: #eeeeee;
+}
+
+
+.onoffswitch2 {
+	position: relative;
+	width: 56px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select: none;
+}
+.onoffswitch2-checkbox {
+	display: none;
+}
+.onoffswitch2-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.onoffswitch2-inner {
+	display: block;
+	width: 200%;
+	margin-left: -100%;
+	transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch2-inner:before, .onoffswitch2-inner:after {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 26px;
+	padding: 0;
+	font: 12px/28px 'ProximaNova';
+	color: #ffffff;
+	box-sizing: border-box;
+}
+.onoffswitch2-inner:before {
+	content: "On";
+	padding-left: 9px;
+	background-color: #59cd7d;
+}
+.onoffswitch2-inner:after {
+	content: "Off";
+	padding-right: 11px;
+	background-color: #f84242;
+	text-align: right;
+}
+.onoffswitch2-switch {
+	display: block;
+	width: 22px;
+	margin: 2px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 30px;
+	border-radius: 20px;
+	transition: all 0.3s ease-in 0s;
+}
+.onoffswitch2-checkbox:checked + .onoffswitch2-label .onoffswitch2-inner {
+	margin-left: 0;
+}
+.onoffswitch2-checkbox:checked + .onoffswitch2-label .onoffswitch2-switch {
+	right: 0;
+}
+
+.onoffswitch2:hover .onoffswitch2-inner:before { background-color: #7cde9a; }
+.onoffswitch2:hover .onoffswitch2-inner:after { background-color: #f56060; }
+
+
+
+.frame { background: #ffffff; }
+.frame__header {
+	padding: 15px 20px 12px 20px;
+	font-size: 0;
+	border-bottom: 1px solid #dddddd;
+}
+.frame__header__left,
+.frame__header__right {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+}
+
+.frame__header__right { text-align: right; }
+.frame__header__right .button { margin-left: 5px; }
+
+.frame__header__left__item {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.frame__header__left__item._back {
+	width: 41px;
+	height: 14px;
+	margin-right: 15px;
+	background: red;
+}
+
+.frame__header__left .add-note { margin-top: 1px; }
+
+
+.frame__content {
+	padding: 20px 0;
+}
+
+.frame__header__title {
+	display: inline-block;
+	position: relative;
+	padding-right: 21px;
+	font-size: 20px;
+	line-height: 22px;
+	color: #000000;
+}
+
+.frame__header__title__edit {
+	position: absolute;
+	top: 3px;
+	right: 0;
+	width: 13px;
+	height: 13px;
+	font-size: 0;
+	background: red;
+}
+
+
+.tabs {
+	font-size: 0;
+	padding-left: 20px;
+	height: 38px;
+	border-bottom: 1px solid #dddddd;
+}
+.tabs__item {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;
+	padding: 0 13px 0 13px;
+	margin: 0 10px 0 0;
+	font: 16px/37px 'ProximaNova';
+	height: 38px;
+	color: #999999;
+	background: #eeeeee;
+	border: 1px solid #eeeeee;
+	border-bottom-color: #dddddd;
+	cursor: pointer;
+}
+
+.tabs__item._active {
+	position: relative;
+	color: #262626;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	border-bottom-color: #ffffff;
+	cursor: default;
+}
+.tabs__item._active:before {
+	content: ' ';
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	right: -1px;
+	height: 2px;
+	background: #59cd7d;
+}
+
+.tabs__item:hover {
+	background: #f5f5f5;
+	border-color: #f5f5f5;
+	border-bottom-color: #dddddd;
+}
+
+.tabs__item._active:hover {
+	background: #ffffff;
+	border-color: #dddddd;
+	border-bottom-color: #ffffff;
+}
+
+
+.form__block {
+	padding-bottom: 14px;
+	margin-bottom: 18px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.form__block__title {
+	font: 17px/20px 'ProximaNovaSemiBold', sans-serif;
+	color: #333333;
+	margin: 0 0 12px 210px;
+}

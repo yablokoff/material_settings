@@ -1,0 +1,15 @@
+/*@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en");*/
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("../fonts/proxima-nova-webfonts/2E9821_6_0.eot");
+  src: url("../fonts/proxima-nova-webfonts/2E9821_6_0.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-webfonts/2E9821_6_0.woff2") format("woff2"), url("../fonts/proxima-nova-webfonts/2E9821_6_0.woff") format("woff"), url("../fonts/proxima-nova-webfonts/2E9821_6_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/proxima-nova-webfonts/2E9821_7_0.eot");
+  src: url("../fonts/proxima-nova-webfonts/2E9821_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-webfonts/2E9821_7_0.woff2") format("woff2"), url("../fonts/proxima-nova-webfonts/2E9821_7_0.woff") format("woff"), url("../fonts/proxima-nova-webfonts/2E9821_7_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'ProximaNovaSemiBold';
+  src: url("../fonts/proxima-nova-webfonts/2E9821_8_0.eot");
+  src: url("../fonts/proxima-nova-webfonts/2E9821_8_0.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova-webfonts/2E9821_8_0.woff2") format("woff2"), url("../fonts/proxima-nova-webfonts/2E9821_8_0.woff") format("woff"), url("../fonts/proxima-nova-webfonts/2E9821_8_0.ttf") format("truetype"); }
+
+/*# sourceMappingURL=font.4f33e8c1cf90.css.map */
