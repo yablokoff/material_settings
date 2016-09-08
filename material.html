@@ -144,17 +144,109 @@
 						    </div>
 						    <div class="frame__content__middle">
 							    <form action="#" class="form">
+								    <!---->
 								    <dl class="form__block">
 									   <dt class="form__block__title">Material info</dt>
 									   <dd>
 										   <div class="form__row">
-												<div class="form__row__item _name">Duplicate from another material</div>
-												<div class="form__row__item _field">
-													<input type="text" value="" id="" name="" placeholder="Select material from the list" class="form__field" />
-												</div>
+											   <div class="form__row__item _name">Duplicate from another material <span class="form__row__item__require">*</span></div>
+											   <div class="form__row__item _field">
+
+													<div class="dropdown2"> <!-- _open --->
+														<div class="dropdown2__selected">Select material from the list Select material from the listSelect material from the listSelect material from the listSelect material from the list</div>
+														<div class="dropdown2__content">
+															<ul class="dropdown2__content__list">
+																<li>SLS (Selective laser sintering)</li>
+																<li>FDM</li>
+																<li>SLM</li>
+															</ul>
+														</div>
+														<!--- <select></select>--->
+													</div>
+
+											   </div>
+										   </div>
+										   <div class="form__row">
+											   <div class="form__row__item _name">Printer</div>
+											   <div class="form__row__item _field">
+												   <div class="dropdown2"> <!-- _open --->
+													   <input type="text" value="" placeholder="Type or choose from the list" class="form__field" />
+													   <div class="dropdown2__content">
+														   <ul class="dropdown2__content__list">
+															   <li>SLS (Selective laser sintering)</li>
+															   <li>FDM</li>
+															   <li>SLM</li>
+														   </ul>
+													   </div>
+													   <!--- <select></select>--->
+												   </div>
+											   </div>
+											   <div class="form__row__help">or <a href="#">add new printer</a></div>
+										   </div>
+										   <div class="form__row">
+											   <div class="form__row__item _name">Price per cm<sup>3</sup></div>
+											   <div class="form__row__item _field">
+												   <input type="text" value="" class="form__field _short" />
+												   <div class="form__row__item__params">$</div>
+											   </div>
+										   </div>
+										   <div class="form__row">
+											   <div class="form__row__item _name">Nominal growth rate per hour</div>
+											   <div class="form__row__item _field">
+												   <input type="text" value="" class="form__field _short" />
+												   <div class="form__row__item__params">mm/Z-axis</div>
+											   </div>
+										   </div>
+										   <div class="form__row">
+											   <div class="form__row__item _name">Printer size</div>
+											   <div class="form__row__item _field">
+													<div class="form__line">
+														<div class="form__line__col">
+															<input type="text" value="" class="form__field" placeholder="Length" />
+															<input type="text" value="" class="form__field" placeholder="Width" />
+															<input type="text" value="" class="form__field" placeholder="Height" />
+														</div>
+														<div class="form__line__col"><div class="form__row__item__params">mm</div></div>
+													</div>
+											   </div>
+										   </div>
+										   <div class="form__row">
+											   <div class="form__row__item _name">Nominal growth rate per hour</div>
+											   <div class="form__row__item _field">
+
+												   <input type="text" value="" class="form__field _short" />
+												   <div class="dropdown2 _inline _isMark"> <!-- _open --->
+													   <div class="dropdown2__selected">mm/Z-axis</div>
+													   <div class="dropdown2__content">
+															<ul class="dropdown2__content__list">
+																<li class="_active">mm/Z-Axis</li>
+																<li>cm/Z-Axis</li>
+																<li>m/Z-Axis</li>
+															</ul>
+													   </div>
+													   <!--- <select></select>--->
+												   </div>
+
+											   </div>
+										   </div>
+										   <div class="form__row">
+											   <div class="form__row__item _name">Image</div>
+											   <div class="form__row__item _field">
+
+												   <div class="form__file">
+													   <div class="form__file__btn">
+														   <input class="form__file__btn__field" type="file" />
+														   <div class="button">Upload</div>
+													   </div>
+													   <div class="form__file__name"></div>
+												   </div>
+
+											   </div>
+											   <div class="form__row__help">Png/ gif/ jpeg, not less than 50 px, maximum 1 Mb. Recommended - png/ gif, 100 px wide, 100 Kb.</div>
 										   </div>
 									   </dd>
 									</dl>
+								    <!--/-->
 								    <dl class="form__block">
 									   <dt class="form__block__title">Lead time</dt>
 									   <dd>
