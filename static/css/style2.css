@@ -335,6 +335,58 @@ a.button._gray:focus { color: #999999; }
 .form__block__options .form__block__group { display: none; }
 .form__block__options._active .form__block__group { display: block; }
 
+
+
+.form__block._slidedown .form__block__title { margin-left: 183px; margin-bottom: 0; }
+
+.form__block._slidedown .form__block__title .form__checkbox {
+	display: inline-block;
+	position: relative;
+}
+
+.form__block._slidedown .form__block__title .form__checkbox > span {
+	font: 17px/20px 'ProximaNovaSemiBold', sans-serif;
+	color: #999999;
+	padding-right: 18px;
+}
+
+.form__block._slidedown .form__block__content { display: none; }
+
+
+.form__block._slidedown._active .form__block__title { margin-bottom: 12px; }
+.form__block._slidedown._active .form__block__title .form__checkbox > span { color: #333333; }
+.form__block._slidedown._active .form__block__title .form__checkbox:before,
+.form__block._slidedown._active .form__block__title .form__checkbox:after {
+	content: ' ';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 0;
+	height: 0;
+}
+
+.form__block._slidedown._active .form__block__title .form__checkbox:before {
+	margin-top: -10px;
+	border: 6px solid transparent;
+	border-bottom-color: #343434;
+}
+
+.form__block._slidedown._active .form__block__title .form__checkbox:after {
+	right: 2px;
+	margin-top: -6px;
+	border: 4px solid transparent;
+	border-bottom-color: #ffffff;
+}
+
+
+
+.form__block._slidedown._active .form__block__content { display: block; }
+
+
+
+
+
+
 .form__button { margin-left: 210px; }
 
 .form__row {
@@ -597,6 +649,38 @@ a.button._gray:focus { color: #999999; }
 }
 
 
+.form__set {
+	margin: 5px 0 0 210px;
+	width: 420px;
+}
+
+.form__set__item {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	font-size: 14px;
+	line-height: 30px;
+	height: 28px;
+	padding: 0 9px 0 22px;
+	margin: 5px 5px 0 0;
+	color: #999999;
+	background: #eeeeee;
+	cursor: pointer;
+}
+
+.form__set__item__del {
+	content: ' ';
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	width: 7px;
+	height: 7px;
+	font-size: 0;
+	margin-top: -3px;
+	background: red;
+}
+
+.form__set__item:hover { background: #f5f5f5; }
 
 
 .dropdown2 {
@@ -627,6 +711,7 @@ a.button._gray:focus { color: #999999; }
 	top: 50%;
 	width: 0;
 	height: 0;
+	z-index: 3;
 }
 
 .dropdown2:before {
