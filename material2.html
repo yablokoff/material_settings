@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Install widget | DigiFabster</title>
+
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/icon">
+    <link rel="icon" href="static/img/favicon.ico" type="image/icon">
+
+    <link href="https://file.myfontastic.com/EsBXFV9S5P9RnadiwXoaWX/icons.css" rel="stylesheet">
+
+	<link href="static/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="static/css/animate.css" rel="stylesheet">
+	<link href="static/css/style.css" rel="stylesheet">
+	<link href="static/css/add-css.css" rel="stylesheet">
+	<link href="static/css/custom-scroll.css" rel="stylesheet">
+
+	<link href="static/css/style2.css" rel="stylesheet">
+
+    <script src="static/js/3rd_party/jquery-1.11.2.min.js"></script>
+    <script src="static/js/3rd_party/bootstrap.min.js"></script>
+    <script src="static/js/module.js"></script>
+    <script src="static/js/GlobalApp.js"></script>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+	<nav class="navbar-default navbar-static-side" role="navigation">
+		<div class="sidebar-collapse">
+			<ul class="nav" id="side-menu">
+				<li class="nav-header">
+                    <div class="nav-logo-header">
+                        <img src="/static/img/white-df-logo.5fce356efc6b.png" />
+                    </div>
+					<div class="dropdown profile-element">
+                        <span>
+
+                         </span>
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Dmitry Vlasov</strong>
+                             </span> <span class="text-muted text-xs block">3dprintus123456789<b class="caret"></b></span> </span> </a>
+						<ul class="dropdown-menu animated fadeInRight m-t-xs">
+
+
+							<li><a href="/manage/logout/">Logout</a></li>
+						</ul>
+					</div>
+					<div class="logo-element">
+						IN+
+					</div>
+
+				</li>
+                <li >
+					<a href="/manage/personal/"><i class="fa fa-user"></i><span class="nav-label">Personal Info</span></a>
+				</li>
+                <li >
+					<a href="/manage/getstarted/"><i class="fa fa-rocket"></i><span class="nav-label">Get started</span></a>
+				</li>
+				<li >
+					<a href="/manage/company/"><i class="fa fa-info-circle"></i><span class="nav-label">Company</span></a>
+				</li>
+				<li >
+					<a href="/manage/materials/"><i class="fa fa-tasks"></i><span class="nav-label">Materials</span></a>
+				</li>
+                <li >
+                    <a href="/manage/clients/"><i class="fa fa-users"></i><span class="nav-label">Clients</span></a>
+                </li>
+				<li >
+					<a href="/manage/orders/"><i class="fa fa-credit-card"></i><span class="nav-label">Orders</span></a>
+				</li>
+                <li >
+                    <a href="/manage/models/"><i class="fa fa-cubes"></i><span class="nav-label">Models</span></a>
+                </li>
+                <li  class="active" >
+					<a href="/manage/install_widget/"><i class="fa fa-code"></i><span class="nav-label">Install widget</span></a>
+				</li>
+                <li >
+					<a href="/manage/billing/"><i class="fa fa-credit-card"></i><span class="nav-label">Billing</span></a>
+				</li>
+                <li>
+					<a href="/3dprintus123456789/client/upload/" target="_blank"><i class="fa fa-upload"></i><span class="nav-label">Test upload</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div id="page-wrapper" class="gray-bg" data-process_forms_url="" data-change_logo_url=>
+        <input type='hidden' name='csrfmiddlewaretoken' value='OPBYITJqK8KhW8yKIEnASZzJk7BhXrQs' />
+		<div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row todo-box">
+			    <div class="col-lg-12">
+			        <!---->
+				    <div class="frame">
+					    <!--header-->
+					    <div class="frame__header">
+						    <div class="frame__header__left">
+							    <div class="frame__header__left__item">
+								    <div class="frame__header__title">Printers and materials</div>
+							    </div>
+							    <div class="frame__header__left__item">
+								    <a href="#" class="button">Create new printer</a>
+								    <a href="#" class="button">Create new material</a>
+							    </div>
+						    </div>
+						    <div class="frame__header__right">
+							    <a href="#" class="link">Overview</a>
+							    <a href="#" class="link">History of changes</a>
+						    </div>
+					    </div>
+					    <!--/header-->
+					    <div class="frame__content">
+							<!--top-->
+						    <div class="frame__content__top">
+								<ul class="tabs2">
+									<li class="tabs2__item _active">All (12)</li>
+									<li class="tabs2__item">Online (9)</li>
+									<li class="tabs2__item">Offline (3)</li>
+								</ul>
+								<!--sort-->
+								<div class="sort-select">
+									<div class="sort-select__name">Show per page:</div>
+									<div class="sort-select__field">
+										<div class="dropdown2"> <!-- _open --->
+											<div class="dropdown2__selected">10</div>
+											<div class="dropdown2__content">
+												<ul class="dropdown2__content__list">
+													<li>10</li>
+													<li>20</li>
+													<li>all</li>
+												</ul>
+											</div>
+											<!--- <select></select>--->
+										</div>
+									</div>
+								</div>
+								<!--/sort-->
+							</div>
+						    <!--/top-->
+						    <!---->
+						    <div class="frame__content__table">
+								<div class="frame__content__table__row _head">
+									<div class="frame__content__table__col _text">Printer</div>
+									<div class="frame__content__table__col _price">Price per hour, $</div>
+									<div class="frame__content__table__col _process">Process</div>
+									<div class="frame__content__table__col _materials">Materials</div>
+									<div class="frame__content__table__col _activity">Activity</div>
+									<div class="frame__content__table__col _extra">Extra</div>
+								</div>
+							    <div class="frame__content__table__row">
+								    <div class="frame__content__table__col _text">
+									    <div>sPro 140</div>
+									    This is our main printer (note for self)
+								    </div>
+								    <div class="frame__content__table__col _price">320</div>
+								    <div class="frame__content__table__col _process">SLS</div>
+								    <div class="frame__content__table__col _materials">12</div>
+								    <div class="frame__content__table__col _activity">
+									    <div class="onoffswitch2">
+										    <input type="checkbox" name="onoffswitch2" class="onoffswitch2-checkbox" id="myonoffswitch2" checked>
+										    <label class="onoffswitch2-label" for="myonoffswitch2">
+											    <span class="onoffswitch2-inner"></span>
+											    <span class="onoffswitch2-switch"></span>
+										    </label>
+									    </div>
+								    </div>
+								    <div class="frame__content__table__col _extra">Extra</div>
+							    </div>
+						    </div>
+						    <!--/-->
+					    </div>
+				    </div>
+				    <!--/-->
+
+
+			    </div>
+			</div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+    <!-- Mainly scripts -->
+    <script src="static/js/3rd_party/jquery.custom-scrollbar.min.js"></script>
+    <script src="static/js/3rd_party/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="static/js/jquery.minimalect.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="static/js/3rd_party/inspinia.js"></script>
+    <script src="static/js/GetStartedActions.js"></script>
+
+</html>
