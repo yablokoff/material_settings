@@ -1,3 +1,7 @@
+.icon {
+	position: relative;
+	font-size: 0;
+}
 .icon:before {
 	/*font-family: "icons-font" !important;
 	font-style: normal !important;
@@ -9,6 +13,24 @@
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;*/
+}
+
+.icon__edit2 {
+	width: 15px;
+	height: 15px;
+	background: red;
+}
+
+.icon__delete {
+	width: 13px;
+	height: 13px;
+	background: red;
+}
+
+.icon__double {
+	width: 18px;
+	height: 18px;
+	background: red;
 }
 
 
@@ -26,10 +48,10 @@
 	display: inline-block;
 	padding: 9px 16px 7px 16px;
 	font: 12px 'ProximaNovaSemiBold', sans-serif;
-	color: #ffffff;
+	color: #ffffff !important;
 	outline: none;
 	text-align: center;
-	text-decoration: none;
+	text-decoration: none !important;
 	text-transform: uppercase;
 	background: #0081d4;
 	border: 0 none;
@@ -39,26 +61,26 @@
 }
 
 .button:hover {
-	color: #ffffff;
+	color: #ffffff !important;
 	background: #30a2eb;
 }
 
 a.button:focus {
-	color: #ffffff;
+	color: #ffffff !important;
 	outline: none;
 }
 
 .button._gray {
-	color: #999999;
+	color: #999999 !important;
 	background: #eeeeee;
 }
 
 .button._gray:hover {
-	color: #999999;
+	color: #999999 !important;
 	background: #f5f5f5;
 }
 
-a.button._gray:focus { color: #999999; }
+a.button._gray:focus { color: #999999 !important; }
 
 .button._icon {
 	position: relative;
@@ -839,12 +861,24 @@ a.button._gray:focus { color: #999999; }
 .dropdown2:hover .dropdown2__selected { border-color: #bbbbbb; }
 
 
-.frame__content__table { margin-top: 30px; }
+.frame__content__table { margin: 19px -20px 0 -20px; }
+
+.frame__content__table a { color: #0081d4; }
+.frame__content__table a:hover { text-decoration: underline; }
+
+.frame__content__table .button { margin-top: 10px; }
+
+.frame__content__table dl { margin: 10px 0 0 0; padding: 0; }
+.frame__content__table dt { font-weight: normal; }
+.frame__content__table dd {
+	margin-bottom: 10px;
+	color: #999999;
+}
 
 .frame__content__table__row {
 	display: table;
 	width: 100%;
-	margin-bottom: 13px;
+	border-bottom: 1px solid #e7e7e7;
 }
 
 .frame__content__table__col {
@@ -855,20 +889,175 @@ a.button._gray:focus { color: #999999; }
 	padding-bottom: 13px;
 	color: #333333;
 	box-sizing: border-box;
-	border-bottom: 1px solid #e7e7e7;
 }
 
-.frame__content__table ._extra { width: 7%; padding-right: 0; }
+.frame__content__table ._extra { width: 7%; padding-right: 0; font-size: 0; }
 .frame__content__table ._activity { width: 13%; }
 .frame__content__table ._materials { width: 15%; }
 .frame__content__table ._process { width: 20%; }
 .frame__content__table ._price { width: 20%; }
 .frame__content__table ._text { width: 25%; }
 
-
 .frame__content__table__row._head .frame__content__table__col {
 	padding-bottom: 4px;
 	color: #999999;
 }
 
+.frame__content__table__row._head ._extra { font-size: 14px; }
+
 .frame__content__table .onoffswitch2 { margin-top: -2px; }
+.frame__content__table__col .icon {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 13px;
+}
+.frame__content__table__col .icon:last-child { margin-right: 0; }
+
+.frame__content__table__col__door {
+	display: inline-block;
+	position: relative;
+	border-bottom: 1px dotted #333333;
+	cursor: pointer;
+}
+
+.frame__content__table__col__door:before,
+.frame__content__table__col__door:after {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	width: 0;
+	height: 0;
+}
+
+.frame__content__table__col__door:before {
+	top: 7px;
+	right: -15px;
+	border: 5px solid transparent;
+	border-top-color: #333333;
+}
+.frame__content__table__col__door:after {
+	top: 7px;
+	right: -13px;
+	border: 3px solid transparent;
+	border-top-color: #ffffff;
+}
+
+
+.frame__content__table__col__note {
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+.frame__content__table__col__mark {
+	display: inline-block;
+	vertical-align: top;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 20px;
+	text-transform: uppercase;
+	padding: 0 6px;
+	height: 18px;
+	background: #cccccc;
+	border-radius: 2px;
+}
+
+.frame__content__table__item {
+	margin-top: -2px;
+	padding: 13px 20px 0 20px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+}
+
+.frame__content__table__item._off .frame__content__table__col { color: #999999; }
+.frame__content__table__item._off .frame__content__table__col__door { border-bottom-color: #999999; }
+.frame__content__table__item._off .frame__content__table__col__door:before { border-top-color: #999999; }
+
+
+.frame__content__table__item__more { display: none; }
+.frame__content__table__item__more ._text { width: 45%; }
+.frame__content__table__item__more .frame__content__table__row { margin-bottom: 13px; }
+.frame__content__table__item__more .frame__content__table__row:last-child { margin-bottom: 0; border-bottom-color: transparent; }
+
+.frame__content__table__item._active {
+	background: #f7f7f7;
+	border-color: #cccccc;
+}
+.frame__content__table__item._active .frame__content__table__item__more { display: block; }
+.frame__content__table__item._active > .frame__content__table__row:first-child { border-bottom-color: transparent; }
+
+.frame__content__table__item._active .frame__content__table__col__door:before {
+	top: 1px;
+	border-bottom-color: #333333;
+	border-top-color: transparent;
+}
+.frame__content__table__item._active .frame__content__table__col__door:after {
+	top: 5px;
+	border-bottom-color: #ffffff;
+	border-top-color: transparent;
+}
+
+
+.frame__content__table__item._off._active .frame__content__table__col__door:before { border-bottom-color: #999999; }
+
+
+.pager2 {
+	position: relative;
+	height: 32px;
+	margin-top: 19px;
+}
+
+.pager2 .pager__list {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.pager2__view {
+	line-height: 32px;
+	color: #999999;
+}
+
+.pager__list {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
+.pager__list li {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;
+	margin-right: -1px;
+	font: 14px/29px 'ProximaNova';
+	height: 30px;
+	color: #333333;
+	text-align: center;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+}
+.pager__list li:first-child {
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+.pager__list li:last-child {
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.pager__list a {
+	display: block;
+	min-width: 34px;
+	height: 30px;
+	color: #333333;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+.pager__list li._active {
+	padding: 0 10px;
+	min-width: 34px;
+	color: #999999;
+	background: #f7f7f7;
+}
+
+.pager__list li._wide,
+.pager__list li._wide a { min-width: 88px; }
