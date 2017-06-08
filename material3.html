@@ -1,0 +1,427 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Install widget | DigiFabster</title>
+
+	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/favicon.ico" type="image/icon">
+    <link rel="icon" href="static/img/favicon.ico" type="image/icon">
+
+    <link href="https://file.myfontastic.com/EsBXFV9S5P9RnadiwXoaWX/icons.css" rel="stylesheet">
+
+	<link href="static/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="static/css/animate.css" rel="stylesheet">
+	<link href="static/css/style.css" rel="stylesheet">
+	<link href="static/css/add-css.css" rel="stylesheet">
+	<link href="static/css/custom-scroll.css" rel="stylesheet">
+
+	<link href="static/css/style2.css" rel="stylesheet">
+
+    <script src="static/js/3rd_party/jquery-1.11.2.min.js"></script>
+    <script src="static/js/3rd_party/bootstrap.min.js"></script>
+    <script src="static/js/module.js"></script>
+    <script src="static/js/GlobalApp.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+
+	<nav class="navbar-default navbar-static-side" role="navigation">
+		<div class="sidebar-collapse">
+			<ul class="nav" id="side-menu">
+				<li class="nav-header">
+                    <div class="nav-logo-header">
+                        <img src="/static/img/white-df-logo.5fce356efc6b.png" />
+                    </div>
+					<div class="dropdown profile-element">
+                        <span>
+
+                         </span>
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Dmitry Vlasov</strong>
+                             </span> <span class="text-muted text-xs block">3dprintus123456789<b class="caret"></b></span> </span> </a>
+						<ul class="dropdown-menu animated fadeInRight m-t-xs">
+
+
+							<li><a href="/manage/logout/">Logout</a></li>
+						</ul>
+					</div>
+					<div class="logo-element">
+						IN+
+					</div>
+
+				</li>
+                <li >
+					<a href="/manage/personal/"><i class="fa fa-user"></i><span class="nav-label">Personal Info</span></a>
+				</li>
+                <li >
+					<a href="/manage/getstarted/"><i class="fa fa-rocket"></i><span class="nav-label">Get started</span></a>
+				</li>
+				<li >
+					<a href="/manage/company/"><i class="fa fa-info-circle"></i><span class="nav-label">Company</span></a>
+				</li>
+				<li >
+					<a href="/manage/materials/"><i class="fa fa-tasks"></i><span class="nav-label">Materials</span></a>
+				</li>
+                <li >
+                    <a href="/manage/clients/"><i class="fa fa-users"></i><span class="nav-label">Clients</span></a>
+                </li>
+				<li >
+					<a href="/manage/orders/"><i class="fa fa-credit-card"></i><span class="nav-label">Orders</span></a>
+				</li>
+                <li >
+                    <a href="/manage/models/"><i class="fa fa-cubes"></i><span class="nav-label">Models</span></a>
+                </li>
+                <li  class="active" >
+					<a href="/manage/install_widget/"><i class="fa fa-code"></i><span class="nav-label">Install widget</span></a>
+				</li>
+                <li >
+					<a href="/manage/billing/"><i class="fa fa-credit-card"></i><span class="nav-label">Billing</span></a>
+				</li>
+                <li>
+					<a href="/3dprintus123456789/client/upload/" target="_blank"><i class="fa fa-upload"></i><span class="nav-label">Test upload</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div id="page-wrapper" class="gray-bg" data-process_forms_url="" data-change_logo_url=>
+        <input type='hidden' name='csrfmiddlewaretoken' value='OPBYITJqK8KhW8yKIEnASZzJk7BhXrQs' />
+		<div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row todo-box">
+			    <div class="col-lg-12">
+			        <!---->
+				    <div class="frame">
+					    <!--header-->
+					    <div class="frame__header frame__header_type2">
+						    <div class="frame__header__left">
+							    <a href="#" class="frame__header__left__item _back" title="Назад">Назад</a>
+							    <div class="frame__header__left__item">
+								    <div class="frame__header__title">Price Tweaking Tool</div>
+							    </div>
+						    </div>
+						    <div class="frame__header__right">
+							    <a href="#" class="button">Accept settings</a>
+						    </div>
+					    </div>
+					    <!--/header-->
+					    <div class="frame__content">
+							<div class="price-tool">
+								<div class="price-tool__settings">
+									<form action="#" class="form">
+										<div class="form__block params-2col">
+											<!---->
+											<dl class="params-2col__item">
+												<dt class="form__block__title">Model</dt>
+												<dd class="model-preview">
+													<div class="model-preview__img">
+														<img src="" alt="" />
+														<a href="#" class="model-preview__btn">Replace model</a>
+													</div>
+													<div class="model-preview__name">Cloud Duck copy.stl</div>
+													<div class="model-preview__volume">Volume: 15034.889 mm<sup>3</sup></div>
+													<div class="model-preview__size">41.180 x 26.060 x 35.760 mm</div>
+												</dd>
+											</dl>
+											<!--/-->
+											<!---->
+											<dl class="params-2col__item">
+												<dt class="form__block__title">Printer & material</dt>
+												<dd>
+													<div class="form__row">
+														<div class="form__row__item _name">Printer</div>
+														<div class="form__row__item _field">
+															<div class="dropdown2"> <!-- _open --->
+																<div class="dropdown2__selected">3D Systems Cube</div>
+																<div class="dropdown2__content">
+																	<ul class="dropdown2__content__list">
+																		<li>3D Systems Cube</li>
+																		<li>FDM</li>
+																		<li>SLM</li>
+																	</ul>
+																</div>
+																<!--- <select></select>--->
+															</div>
+														</div>
+													</div>
+													<div class="form__row">
+														<div class="form__row__item _name">Material</div>
+														<div class="form__row__item _field">
+															<div class="dropdown2"> <!-- _open --->
+																<div class="dropdown2__selected">ABS (Ultimaker)</div>
+																<div class="dropdown2__content">
+																	<ul class="dropdown2__content__list">
+																		<li>ABS (Ultimaker)</li>
+																		<li>FDM</li>
+																		<li>SLM</li>
+																	</ul>
+																</div>
+																<!--- <select></select>--->
+															</div>
+														</div>
+													</div>
+													<div class="form__description">
+														Horizontal printing speed: 30 mm / sec<br />
+														Density: 0 gram per cm<sup>3</sup>
+													</div>
+												</dd>
+											</dl>
+											<!--/-->
+										</div>
+										<!---->
+										<dl class="form__block">
+											<dt class="form__block__title">Execution</dt>
+											<dd>
+												<div class="form__block__comment">Choose execution variation to see influence of time and weight</div>
+												<div class="frame__content__table price-params">
+													<!--head-->
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row _head">
+															<div class="frame__content__table__col _w38">Layer thickness, um</div>
+															<div class="frame__content__table__col _w38">Filling, %</div>
+															<div class="frame__content__table__col _w24 _text-right">Printing results</div>
+														</div>
+													</div>
+													<!--/head-->
+													<!--item-->
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row">
+															<div class="frame__content__table__col _w38">
+																<ul class="select-mult">
+																	<li>5</li>
+																	<li class="selected">10</li>
+																	<li>15</li>
+																</ul>
+															</div>
+															<div class="frame__content__table__col _w38">
+																<ul class="select-mult">
+																	<li class="selected">100</li>
+																	<li>700</li>
+																	<li>500</li>
+																</ul>
+															</div>
+															<div class="frame__content__table__col _w24 _text-right">
+																<div class="price-params__value">2 hours, 120 gram</div>
+																<div class="price-params__value">1 hour, 100 gram</div>
+																<div class="price-params__value">1 hour, 50 gram</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</dd>
+										</dl>
+										<!--/-->
+										<dl class="form__block">
+											<dt class="form__block__title">Price parameters</dt>
+											<dd>
+												<div class="frame__content__table price-params">
+													<!--head-->
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row _head">
+															<div class="frame__content__table__col _w50">Printer parameters</div>
+															<div class="frame__content__table__col _w25">Measurments</div>
+															<div class="frame__content__table__col _w25 _text-right">Price for this model</div>
+														</div>
+													</div>
+													<!--/head-->
+													<!--item-->
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row">
+															<div class="frame__content__table__col _w50">
+
+																<div class="form__row">
+																	<div class="form__row__item _name">Price per hour</div>
+																	<div class="form__row__item _field">
+																		<input type="text" value="" class="form__field _middle">
+																		<div class="form__row__item__params _fix-width80">$ per hour</div>
+																	</div>
+																</div>
+
+															</div>
+															<div class="frame__content__table__col _w25 _text-bottom"><div class="price-params__value">0 hours</div></div>
+															<div class="frame__content__table__col _w25 _text-right _text-bottom"><div class="price-params__value">$0</div></div>
+														</div>
+													</div>
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row">
+															<div class="frame__content__table__col _w50">
+
+																<div class="form__row">
+																	<div class="form__row__item _name">Price of surface area</div>
+																	<div class="form__row__item _field">
+																		<input type="text" value="" class="form__field _middle">
+																		<div class="form__row__item__params _fix-width80">$ per hour</div>
+																	</div>
+																</div>
+
+															</div>
+															<div class="frame__content__table__col _w25 _text-bottom"><div class="price-params__value">0 cm<sup>2</sup></div></div>
+															<div class="frame__content__table__col _w25 _text-right _text-bottom"><div class="price-params__value">$120</div></div>
+														</div>
+													</div>
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row">
+															<div class="frame__content__table__col _w50">
+
+																<div class="form__row">
+																	<div class="form__row__item _name">Price of volume bounding box</div>
+																	<div class="form__row__item _field">
+																		<input type="text" value="" class="form__field _middle">
+																		<div class="form__row__item__params _fix-width80">$ per hour</div>
+																	</div>
+																</div>
+
+															</div>
+															<div class="frame__content__table__col _w25 _text-bottom"><div class="price-params__value">0 cm<sup>3</sup></div></div>
+															<div class="frame__content__table__col _w25 _text-right _text-bottom"><div class="price-params__value">$30</div></div>
+														</div>
+													</div>
+													<!--item-->
+												</div>
+												<div class="frame__content__table price-params">
+													<!--head-->
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row _head">
+															<div class="frame__content__table__col _w50">Material parameters</div>
+															<div class="frame__content__table__col _w25"></div>
+															<div class="frame__content__table__col _w25"></div>
+														</div>
+													</div>
+													<!--/head-->
+													<!--item-->
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row">
+															<div class="frame__content__table__col _w50">
+
+																<div class="form__row">
+																	<div class="form__row__item _name">Price</div>
+																	<div class="form__row__item _field">
+																		<input type="text" value="" class="form__field _middle">
+																		<div class="form__row__item__params _fix-width80">$ per hour</div>
+																	</div>
+																</div>
+
+															</div>
+															<div class="frame__content__table__col _w25 _text-bottom"><div class="price-params__value">0 cm<sup>3</sup></div></div>
+															<div class="frame__content__table__col _w25 _text-right _text-bottom"><div class="price-params__value">$20</div></div>
+														</div>
+													</div>
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row">
+															<div class="frame__content__table__col _w50">
+
+																<div class="form__row">
+																	<div class="form__row__item _name">Price per gram</div>
+																	<div class="form__row__item _field">
+																		<input type="text" value="" class="form__field _middle">
+																		<div class="form__row__item__params _fix-width80">$</div>
+																	</div>
+																</div>
+
+															</div>
+															<div class="frame__content__table__col _w25 _text-bottom"><div class="price-params__value">0 gram</div></div>
+															<div class="frame__content__table__col _w25 _text-right _text-bottom"><div class="price-params__value">$110</div></div>
+														</div>
+													</div>
+													<!--item-->
+												</div>
+												<div class="frame__content__table price-params">
+													<!--head-->
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row _head">
+															<div class="frame__content__table__col _w50">Priority</div>
+															<div class="frame__content__table__col _w25"></div>
+															<div class="frame__content__table__col _w25"></div>
+														</div>
+													</div>
+													<!--/head-->
+													<!--item-->
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row">
+															<div class="frame__content__table__col _w50">
+
+																<div class="form__row">
+																	<div class="form__row__item _option">
+																		<label class="form__radio">
+																		    <input type="radio" name="option-priority" value="" checked />
+																		    <span>Option 1</span>
+																	    </label>
+																	</div>
+																	<div class="form__row__item _field">
+																		<input type="text" value="" class="form__field _small">
+																		<div class="form__row__item__params">%</div>
+																	</div>
+																</div>
+
+															</div>
+															<div class="frame__content__table__col _w25"></div>
+															<div class="frame__content__table__col _w25 _text-right _text-bottom"><div class="price-params__value">$110</div></div>
+														</div>
+													</div>
+													<div class="frame__content__table__item">
+														<div class="frame__content__table__row">
+															<div class="frame__content__table__col _w50">
+
+																<div class="form__row">
+																	<div class="form__row__item _option">
+																		<label class="form__radio">
+																		    <input type="radio" name="option-priority" value="" />
+																		    <span>Option 2</span>
+																	    </label>
+																	</div>
+																	<div class="form__row__item _field">
+																		<input type="text" value="" class="form__field _small">
+																		<div class="form__row__item__params">%</div>
+																	</div>
+																</div>
+
+															</div>
+															<div class="frame__content__table__col _w25"></div>
+															<div class="frame__content__table__col _w25 _text-right _text-bottom"><div class="price-params__value">$110</div></div>
+														</div>
+													</div>
+													<!--item-->
+												</div>
+											</dd>
+										</dl>
+									</form>
+								</div>
+							</div>
+					    </div>
+				    </div>
+				    <!--/-->
+			    </div>
+			</div>
+        </div>
+    </div>
+</div>
+
+<!--price-total-->
+<div class="price-total">
+	<div class="price-total__title">Total price</div>
+	<div class="price-total__descr">
+		$1214.26
+		<span class="price-total__hint">Without taxes</span>
+	</div>
+</div>
+<!--/price-total-->
+
+</body>
+    <!-- Mainly scripts -->
+    <script src="static/js/3rd_party/jquery.custom-scrollbar.min.js"></script>
+    <script src="static/js/3rd_party/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="static/js/jquery.minimalect.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="static/js/3rd_party/inspinia.js"></script>
+    <script src="static/js/GetStartedActions.js"></script>
+
+</html>
