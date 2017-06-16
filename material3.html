@@ -124,7 +124,7 @@
 												<dd class="model-preview">
 													<div class="model-preview__img">
 														<img src="" alt="" />
-														<a href="#" class="model-preview__btn">Replace model</a>
+														<a role="button" data-popup="" class="model-preview__btn">Replace model</a>
 													</div>
 													<div class="model-preview__name">Cloud Duck copy.stl</div>
 													<div class="model-preview__volume">Volume: 15034.889 mm<sup>3</sup></div>
@@ -413,6 +413,62 @@
 	</div>
 </div>
 <!--/price-total-->
+<!--popup Choose a model-->
+<div class="popup" style="display: block">
+	<div class="popup-dialog">
+		<div class="popup-content">
+			<a role="button" class="popup-content__close icon icon__delete">Закрыть</a>
+			<div class="popup-content__title">Choose a model</div>
+			<form class="form form_choose-model" action="#">
+				<div class="form__row">
+					<div class="form__line">
+						<div class="form__line__col _name">
+							<div class="form__row__item _name">Search</div>
+							<input type="text" value="" placeholder="Model name" class="form__field">
+						</div>
+						<div class="form__line__col _date">
+							<div class="form__row__item _name">Date from</div>
+							<div class="form__date"><input type="text" value="" class="form__field"></div>
+						</div>
+						<div class="form__line__col _date">
+							<div class="form__row__item _name">Date to</div>
+							<div class="form__date"><input type="text" value="" class="form__field"></div>
+						</div>
+					</div>
+				</div>
+				<div class="form__row">
+					<div class="search-result">
+						<div class="search-result__row">
+							<div class="search-result__col _img">
+								<img src="static/images/pic1.jpg" alt="" class="search-result__img" />
+							</div>
+							<div class="search-result__col">
+								Cloud Duck copy.stl
+								<div class="search-result__date">26 April, 2017</div>
+							</div>
+							<div class="search-result__col _email">vk@craftedpixels.ru</div>
+						</div>
+						<div class="search-result__row">
+							<div class="search-result__col _img">
+								<img src="static/images/pic1.jpg" alt="" class="search-result__img" />
+							</div>
+							<div class="search-result__col">
+								Cloud Duck copy.stl
+								<div class="search-result__date">26 April, 2017</div>
+							</div>
+							<div class="search-result__col _email">vk@craftedpixels.ru</div>
+						</div>
+					</div>
+				</div>
+				<div class="form__row _button">
+					<input type="button" name="" value="Cancel" class="button _large _transparent" />
+					<input type="submit" name="" value="Accept" class="button _large" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!--/popup Choose a model-->
 
 </body>
     <!-- Mainly scripts -->
